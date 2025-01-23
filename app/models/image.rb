@@ -1,5 +1,5 @@
 class Image < ApplicationRecord
-  belongs_to :user, optional: true
+  belongs_to :user
   belongs_to :post
 
   # mount_uploader を利用して image_url を管理
