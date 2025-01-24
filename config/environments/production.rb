@@ -87,7 +87,7 @@ Rails.application.configure do
     port: 587,
     address: "smtp.gmail.com",
     domain: "portfolio-app-ofsi.onrender.com",
-    user_name: ENV["GMAIL_ADDRESS"], # Gmailアカウントのメールアドレス
+    user_name: ENV["GMAIL_USERNAME"], # Gmailアカウントのメールアドレス
     password: ENV["GMAIL_PASSWORD"], # Gmailで設定したアプリパスワード
     authentication: "plain",
     enable_starttls_auto: true
