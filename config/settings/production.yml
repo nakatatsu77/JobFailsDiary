@@ -1,4 +1,5 @@
 default_url_options:
   host: "https://portfolio-app-ofsi.onrender.com/"
+  protcol: "https"
 sorcery:
   google_callback_url: "https://portfolio-app-ofsi.onrender.com/oauth/callback?provider=google"
