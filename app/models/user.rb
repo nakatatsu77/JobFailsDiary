@@ -10,6 +10,7 @@ class User < ApplicationRecord
   validates :email, presence: true, uniqueness: true
 
   has_many :posts, dependent: :destroy
+  has_many :comments, dependent: :destroy
   has_one :image, dependent: :destroy
   has_many :authentications, dependent: :destroy
   accepts_nested_attributes_for :authentications
