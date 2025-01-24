@@ -2,6 +2,7 @@ ja:
   defaults:
     delete_confirm: 削除しますか？
     password_reset: パスワードリセット
+    post: 投稿
     flash_message:
       created: "%{item}を作成しました"
       updated: "%{item}を更新しました"

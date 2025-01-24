@@ -35,4 +35,10 @@
       <% end %>
     </div>
   </div>
+  <%= render 'comments/form', comment: @comment, post: @post %>
+  <table class="table">
+    <tbody id="table-comment">
+      <%= render @comments %>
+    </tbody>
+  </table>
 </section>
