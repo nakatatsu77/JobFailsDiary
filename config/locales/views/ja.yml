@@ -5,6 +5,7 @@ ja:
     post: 投稿
     flash_message:
       created: "%{item}を作成しました"
+      not_created: "%{item}を投稿出来ませんでした"
       updated: "%{item}を更新しました"
       not_updated: "%{item}を更新出来ませんでした"
       deleted: "%{item}を削除しました"
