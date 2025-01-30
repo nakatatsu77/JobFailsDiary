@@ -19,7 +19,11 @@ class OauthsController < ApplicationController
       auto_login(@user)
     end
     redirect_to root_path, success: "Googleアカウントでログインしました"
-  rescue StandardError
+  rescue OAuth2::Error => e
+    logger.error("OAuth2 Error: #{e.message}")
+    redirect_to root_path, alert: "Googleアカウントの認証中にエラーが発生しました"
+  rescue StandardError => e
+    logger.error("Unexpected Error: #{e.message}")
     redirect_to root_path, alert: "Googleアカウントでログインに失敗しました"
   end
 
