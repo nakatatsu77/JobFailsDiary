@@ -5,9 +5,9 @@
   <div class="border-2 border-neutral mx-auto max-w-5xl bg-neutral-content">
     <div class="mx-8 my-8">
       <%= form_with model: @post, local: true, html: { multipart: true } do |f| %>
-      <div class="mb-8 w-auto h-96 border-2">
+      <div class="mb-8 w-auto h-96 border-2 hero">
         <%= f.fields_for :image do |image_fields| %>
-        <%= image_fields.file_field :image_url, class: "form-control", accept: "image/*" %>
+        <%= image_fields.file_field :image_url, class: "file-input file-input-primary w-full max-w-xs bg-neutral-content", accept: "image/*" %>
         <% end %>
       </div>
       <div class="mb-3">
