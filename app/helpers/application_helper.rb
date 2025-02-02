@@ -14,13 +14,13 @@ module ApplicationHelper
       reverse: true,
       charset: "utf-8",
       description: "職場でのやらかしエピソードを投稿するアプリです",
-      canonical: request.original_url,
+      canonical: "https://job-fails-diary.com/",
       og: {
         site_name: "バイトやらかしにっき",
         title: "バイトやらかしにっき",
         description: "職場でのやらかしエピソードを投稿するアプリです",
         type: "website",
-        url: request.original_url,
+        url: "https://job-fails-diary.com/",
         image: image_url("post_placeholder.png"),
         local: "ja-JP"
       },
