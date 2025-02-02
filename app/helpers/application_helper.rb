@@ -12,6 +12,7 @@ module ApplicationHelper
       site: "バイトやらかしにっき",
       title: "バイトやらかしにっき",
       reverse: true,
+      separator: "|",
       charset: "utf-8",
       description: "職場でのやらかしエピソードを投稿するアプリです",
       canonical: "https://job-fails-diary.com/",

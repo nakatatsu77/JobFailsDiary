@@ -15,7 +15,6 @@
         <li><%= @post.body %></li>
         <li class="text-end pr-8"><%= @post.user.name %></li>
       </ul>
-      <% if current_user.own?(@post) %>
       <div class='ms-auto flex space-x-1 > *'>
         <%= link_to edit_post_path(@post), id: "button-edit-#{@post.id}" do %>
         <i class="btn">編集</i>
@@ -32,7 +31,6 @@
         <p>シェア</p>
         <% end %>
       </div>
-      <% end %>
     </div>
   </div>
   <%= render 'comments/form', comment: @comment, post: @post %>
