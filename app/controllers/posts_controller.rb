@@ -85,7 +85,7 @@ class PostsController < ApplicationController
                         title: post.body,
                         description: "職場でのやらかしエピソードの投稿です",
                         type: "website",
-                        url: "https://job-fails-diary.com/",
+                        url: request.original_url,
                         image: image_url,
                         locale: "ja-JP"
                       },
