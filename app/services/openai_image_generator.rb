@@ -3,7 +3,7 @@ class OpenaiImageGenerator
     response = OpenAIClient.images.generate(
       parameters: {
         model: "dall-e-3",
-        prompt: prompt,
+        prompt: "A realistically drawn person making a mistake at their part-time job. No text. #{prompt}",
         size: "1024x1024",
         quality: "standard",
         n: 1
