@@ -1,6 +1,9 @@
 # バイトやらかしにっき
 [![Image from Gyazo](https://i.gyazo.com/713e4e96ea7cfce4c000276458e4f16f.png)](https://gyazo.com/713e4e96ea7cfce4c000276458e4f16f)
 
+## サービスURL
+https://job-fails-diary.com
+
 ## サービス概要
 職場でやらかした（ミスをした）時のエピソードを投稿、閲覧できるアプリです。
 
