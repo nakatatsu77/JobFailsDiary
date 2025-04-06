@@ -37,14 +37,22 @@
 </head>
 
 <body>
-  <% if logged_in? %>
-  <%= render 'shared/header' %>
-  <% else %>
-  <%= render 'shared/before_login_header' %>
-  <% end %>
-  <%= render 'shared/flash_message' %>
-  <%= yield %>
-  <%= render 'shared/footer' %>
+  <div data-controller="loading">
+    <div data-loading-target="spinner" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black bg-opacity-40 hidden">
+      <div class="h-[150px] w-[150px] flex items-center justify-center">
+        <span class="loading loading-spinner text-default w-full h-full"></span>
+      </div>
+      <div class="mt-4 text-white text-lg font-semibold">生成中...</div>
+    </div>
+    <% if logged_in? %>
+    <%= render 'shared/header' %>
+    <% else %>
+    <%= render 'shared/before_login_header' %>
+    <% end %>
+    <%= render 'shared/flash_message' %>
+    <%= yield %>
+    <%= render 'shared/footer' %>
+  </div>
 </body>
 
 </html>
